@@ -47,13 +47,11 @@ The following technologies were used in building the Expense Tracker web applica
 
 The Signup page allows new users to create an account by providing their name, email, and password. After successful signup, users are redirected to the Login page to access their Expense Tracker account.
 
-![Signup Page](/path/to/signup-screenshot.png) <!-- Insert screenshot of the signup page -->
+![Signup Page](https://github.com/coldcoffeee/expense-tracker/assets/68056738/35bfa514-53db-4f23-b6bc-2d1671f90a8c)
 
 ### Login Page
 
 The Login page requests users to enter their registered email and password for authentication. Upon successful login, users gain access to their personalized Expenses Dashboard.
-
-![Login Page](/path/to/login-screenshot.png) <!-- Insert screenshot of the login page -->
 
 ### Expenses Page
 
@@ -67,15 +65,26 @@ On the left side, there is a form where users can add new expenses by providing 
 
 On the right side, a table displays the added expenses in a paginated manner, with five records per page. Users can navigate through the pages using buttons. Additionally, users can delete individual expenses from the table.
 
+Upon buying premium, the users can see the leaderboards and get a new feature to download their expenses.
+
 Header:
 - Buy Premium Button: Allows users to unlock premium features using the Razorpay integration.
 - Download Button: Appears atop the table, enabling users to download all their expenses in JSON format for easy export and analysis.
 
-![Expenses Page](/path/to/expenses-screenshot.png) <!-- Insert screenshot of the expenses page -->
+![dashboard_free](https://github.com/coldcoffeee/expense-tracker/assets/68056738/51c5ee80-4a31-42bc-8edf-6c5f01658f9d)
+![razorpay](https://github.com/coldcoffeee/expense-tracker/assets/68056738/1e49046f-4696-4062-89e8-beb73b833809)
+![dashboard_premium](https://github.com/coldcoffeee/expense-tracker/assets/68056738/65d844ab-39d3-452d-92ab-b0f6eb0da03d)
+
 
 ### Forgot Password
 
 The application provides a Forgot Password feature to assist users in recovering their accounts. This functionality is implemented using the Brevo API (formerly Sendinblue) to send password recovery instructions to the user's registered email address.
+![forgot_form](https://github.com/coldcoffeee/expense-tracker/assets/68056738/dd704490-5b6e-47b9-8191-0f3340527661)
+
+![reset_form](https://github.com/coldcoffeee/expense-tracker/assets/68056738/0d5b65b3-b081-4389-972a-f89752c1ef00)
+
+![reset_link](https://github.com/coldcoffeee/expense-tracker/assets/68056738/aab81ba9-0e3f-422b-9c6b-1d9b27be8aed)
+
 
 ## Installation and Usage
 
@@ -83,9 +92,10 @@ To run Expense Tracker locally, follow these steps:
 
 1. Clone this repository: `git clone https://github.com/coldcoffeee/expense-tracker.git`
 2. Install the necessary dependencies: `npm install`
-3. Set up MongoDB and configure the database connection in `config.js`.
-4. Run the application: `npm start`
-5. Access the application in your web browser at `http://localhost:3000`
+3. Set up MongoDB and configure the database connection using Mongoose.
+4. Set up your environment variables for Sendinblue and Mongoose.
+5. Run the application: `npm start`
+6. Access the application in your web browser at `http://localhost:3000`
 
 ## Support and Feedback
 
