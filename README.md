@@ -79,6 +79,7 @@ Header:
 ### Forgot Password
 
 The application provides a Forgot Password feature to assist users in recovering their accounts. This functionality is implemented using the Brevo API (formerly Sendinblue) to send password recovery instructions to the user's registered email address.
+
 ![forgot_form](https://github.com/coldcoffeee/expense-tracker/assets/68056738/dd704490-5b6e-47b9-8191-0f3340527661)
 
 ![reset_form](https://github.com/coldcoffeee/expense-tracker/assets/68056738/0d5b65b3-b081-4389-972a-f89752c1ef00)
